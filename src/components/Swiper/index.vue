@@ -152,7 +152,6 @@ export default {
         
       let style = document.defaultView.getComputedStyle(DOM.yxtVuX, null);
       let translateX = getTransformByMatrix(style.transform).x
-      console.log(translateX);
       return -translateX + this.slideDistance
     },
     _judgePage() {
@@ -251,7 +250,6 @@ export default {
       }
       divisions.reverse();
       sections.reverse();
-      console.log(divisions, sections);
     },
     _myinit() {
       bodyMove = this._move;
@@ -275,7 +273,7 @@ export default {
         this.quicktransitioning = false;
         this._show();
       });
-      SWIPER_WIDTH = DOM.xU1c7L.offsetWidth;
+      SWIPER_WIDTH = DOM.xU1c7L.offsetWidth - 2;
 
       if (this.options.autoplay) {
         timer = setInterval(() => {
@@ -303,7 +301,6 @@ export default {
 <style lang="less" scoped>
 .xU1c7L {
   user-select: none;
-  box-sizing: border-box;
   overflow: hidden;
   position: relative;
   .ie8uha{

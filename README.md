@@ -9,7 +9,7 @@ npm install vue-cnm-swiper --save
 </swiper>
 ```
 ```javascript
-import Swiper from 'swiper.umd.min'
+import Swiper from 'vue-cnm-swiper'
 Vue.use(Swiper)
 ```
 

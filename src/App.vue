@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    {{swiperdata}}
     <swiper class="swiper" ref="swiper" @show="d => swiperdata = d">
       <swiper-slide class="swiper-slide" v-for="i in num" :key="i">{{i}}</swiper-slide>
     </swiper>
@@ -48,8 +49,6 @@ export default {
     text-align: center;
     font-weight: bold;
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 </style>

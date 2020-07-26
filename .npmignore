@@ -1,7 +1,6 @@
 .DS_Store
 node_modules
 public/
-src/
 vue.config.js
 dist/demo.html
 dist/swiper.common.js
